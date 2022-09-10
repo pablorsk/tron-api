@@ -64,5 +64,11 @@ $tron->contract('Contract Address');
 $ vendor/bin/phpunit
 ```
 
+### Ready Docker environment
+
+```bash
+docker run -it --rm --name tronapi80 -e PHP_EXTENSIONS="gmp bcmath" -v "$PWD":/usr/src/app pablorsk/laravel-json-api:8.0 bash
+```
+
 ## Donations
 **Tron(TRX)**: TRWBqiqoFZysoAeyR1J35ibuyc8EvhUAoY
